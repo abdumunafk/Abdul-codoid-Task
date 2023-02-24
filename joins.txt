@@ -1,0 +1,36 @@
+jkoins in sql
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+types of joins
+inner joins 
+left joins
+right joins
+outer joins 
+
+inner joins
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table 
+
+left joins
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+ORDER BY Customers.CustomerName;
+
+rigt joins
+SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+FROM Orders
+RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+ORDER BY Orders.OrderID;
+
+outerjoins 
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName;

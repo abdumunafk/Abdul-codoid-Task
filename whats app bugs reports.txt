@@ -1,0 +1,7 @@
+How to report bugs for WhatsApp from the app
+	Open the WhatsApp application.
+	Hit the three-dot menu button and select Settings.
+	Tap on 'Help' and then choose 'Contact us' from the list.
+	Then you will see a text box, which you can use to describe the problem you are facing,
+ and the three '+' signs for adding screenshots. The app automatically sends logs too.
+Hitting the 'Next' button at the top right will redirect you to your e-mail client to finally send the report.
